@@ -17,3 +17,12 @@ def myMap(&prc)
 
   mapped
 end
+
+
+def range_recursive(start, last)
+  arr = [start]
+
+  return arr if start == last
+
+  arr.concat(range_recursive(start + 1, last))
+end
